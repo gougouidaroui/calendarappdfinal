@@ -29,7 +29,7 @@
     </select>
 </div>
 <!-- Modal for creating/editing missions -->
-<div class="modal fade" id="missionModal" tabindex="-1" role="dialog" aria-labelledby="missionModalLabel" aria-hidden="true">
+<div class="modal fade" id="missionModal" role="dialog" aria-labelledby="missionModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -56,7 +56,8 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="site">Site</label>
-                        <select id="site" name="Site" class="form-control" required>
+                        <select id="site" name="Site" class="" required>
+                            <option value="">Tous les sites</option>
                             <option value="SiteA">Site A</option>
                             <option value="SiteB">Site B</option>
                             <option value="SiteC">Site C</option>
@@ -111,7 +112,7 @@
                 $('#missionId').val('');
                 $('#startDate').val(info.dateStr);
                 $('#endDate').val(info.dateStr);
-                $('#site').val('SiteA');
+                $('#site').val('');
                 $('#selectedEmployees').empty();
                 $('#selectedEmployeeIds').val('');
                 $('#deleteMissionButton').hide();
@@ -144,6 +145,7 @@
                                 text: employee.name,
                                 selected: selectedEmployeeIds.includes(employee.name)
                             })),
+                            dropdownCssClass: "increasedzindexclass",
                             placeholder: 'Sélectionnez des employés',
                             allowClear: true
                         }).val(selectedEmployeeIds).trigger('change');
@@ -302,6 +304,7 @@
                 url: '@Url.Action("GetAllEmployees", "Mission")',
                 dataType: 'json',
                 delay: 250,
+                dropdownCssClass: "increasedzindexclass",
                 processResults: function (data) {
                     return {
                         results: data
@@ -309,7 +312,27 @@
                 },
                 cache: true
             },
-            minimumInputLength: 1
+            minimumInputLength: 1,
+            dropdownParent: $('#missionModal'),
+            width: "100%"
+        });
+        $('#siteFilter').select2({
+            placeholder: 'Sélectionnez un site',
+            allowClear: true,
+            minimumInputLength: 1,
+            width: "20%"
+        });
+        $('#employeeFilter').select2({
+            placeholder: 'Sélectionnez des employee',
+            allowClear: true,
+            minimumInputLength: 1,
+            width: "20%"
+        });
+        $('#site').select2({
+            placeholder: 'Sélectionnez un site',
+            dropdownParent: $('#missionModal'),
+            minimumInputLength: 1,
+            width: "100%"
         });
         $.ajax({
             url: '@Url.Action("GetAllEmployees", "Mission")',
@@ -318,7 +341,9 @@
                 $('#employees').select2({
                     data: data,
                     placeholder: 'Sélectionnez des employés',
-                    allowClear: true
+                    allowClear: true,
+                    dropdownCssClass: "increasedzindexclass",
+                    width: '100%'
                 });
             }
         });
