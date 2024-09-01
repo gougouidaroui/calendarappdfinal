@@ -3,11 +3,11 @@ html {
 }
 
 @media (min-width: 768px) {
-    html {
-        font-size: 16px;
-        background-color: #E8D6CC;
-        color: #F6EFE5;
-    }
+  html {
+    font-size: 16px;
+    background-color: #2a273f;
+  color: #e0def4;
+  }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -20,33 +20,33 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
-    background-color: #E8D6CC;
-    color: #F6EFE5;
+  margin-bottom: 60px;
+  background-color: #2a273f;
+  color: #e0def4;
 }
 
 header {
-    background-color: #E8D6CC;
-    color: #F6EFE5;
+  background-color: #2a273f;
+  color: #e0def4;
 }
 nav {
-    background-color: #C59D83;
-    color: #F6EFE5;
+  background-color: #1f1d2e;
+  color: #e0def4;
 }
 a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-    color: #F6EFE5 !important;
-    text-decoration: none !important;
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color: #e0def4 !important;
+  text-decoration: none !important;
 }
 
 a {
-    color: #F6EFE5 !important;
-    text-decoration: none !important;
+  color: #e0def4 !important;
+  text-decoration: none !important;
 }
 .text-white-custom {
-    color: #F6EFE5 !important;
+  color: #e0def4 !important;
 }
 
 .btn-primary {
@@ -55,22 +55,25 @@ a {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #F6EFE5 !important;
-    background-color: #C59D83;
-    border-color: #1861ac;
+  color: #908caa !important;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
 }
 
 .nav-link-custom {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #F6EFE5 !important;
-    text-decoration: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  display: block;
+  padding: 0.3rem 0.5rem;
+  color: #908caa !important;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
-    .nav-link-custom:hover,
-    .nav-link-custom:focus {
-        color: #F6EFE5;
-    }
+.nav-item {
+    margin: 5px;
+}
+.nav-link-custom:hover,
+.nav-link-custom:focus {
+  color: #e0def4;
+}
 
 .fc-day.fc-day-sun.fc-day-today.fc-daygrid-day{
     background-color: #c4a7e7 !important;
