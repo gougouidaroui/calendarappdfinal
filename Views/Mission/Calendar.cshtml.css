@@ -34,3 +34,10 @@
     color: white;
     border-radius: 0.25em;
 }
+.modal{
+
+    z-index:1051;
+}
+.select2-results {
+    color:#000 !important;
+}

@@ -28,6 +28,11 @@ a {
     border-color: #1861ac;
 }
 
+.nav-item {
+  border: 4px solid #E8D6CC;;
+  border-radius: 80px;
+}
+
 .nav-link-custom {
     display: block;
     padding: 0.5rem 1rem;
