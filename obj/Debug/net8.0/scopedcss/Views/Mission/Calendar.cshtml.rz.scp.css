@@ -1,0 +1,44 @@
+.article-box[b-ac8x0wzefo] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.login-container[b-ac8x0wzefo] {
+    height: 100%;
+    width: 90%;
+    padding: 2rem;
+    background-color: #F0f3fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #000 !important;
+}
+
+.modal-header[b-ac8x0wzefo] {
+    background-color: #8aaee0;
+}
+.modal-body[b-ac8x0wzefo] {
+    color: #000;
+}
+.filter-container[b-ac8x0wzefo] {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    right: 0;
+}
+.badge[b-ac8x0wzefo] {
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.2em;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.25em;
+}
+.modal[b-ac8x0wzefo]{
+
+    z-index:1051;
+}
+.select2-results[b-ac8x0wzefo] {
+    color:#000 !important;
+}

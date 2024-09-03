@@ -5,7 +5,7 @@ html {
 @media (min-width: 768px) {
     html {
         font-size: 16px;
-        background-color: #E8D6CC;
+        background-color: #D5DEEF;
         color: #F6EFE5;
     }
 }
@@ -21,16 +21,16 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-color: #E8D6CC;
-    color: #F6EFE5;
+    background-color: #D5DEEF;
+    color: #000;
 }
 
 header {
-    background-color: #E8D6CC;
+    background-color: #D5DEEF;
     color: #F6EFE5;
 }
 nav {
-    background-color: #C59D83;
+    background-color: #628ECB;
     color: #F6EFE5;
 }
 a.navbar-brand {
@@ -42,11 +42,11 @@ a.navbar-brand {
 }
 
 a {
-    color: #F6EFE5 !important;
+    color: #000 !important;
     text-decoration: none !important;
 }
 .text-white-custom {
-    color: #F6EFE5 !important;
+    color: #000 !important;
 }
 
 .btn-primary {
@@ -56,11 +56,11 @@ a {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #F6EFE5 !important;
-    background-color: #C59D83;
+    background-color: #628ECB;
     border-color: #1861ac;
 }
 .nav-item {
-  border: 4px solid #C59D83;
+  border: 4px solid #8aaee0;
   border-radius: 80px;
 }
 
@@ -78,6 +78,6 @@ a {
     }
 
 .fc-day.fc-day-sun.fc-day-today.fc-daygrid-day{
-    background-color: #c4a7e7 !important;
+    background-color: #b1c9ef !important;
 }
 
